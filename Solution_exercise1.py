@@ -1,7 +1,7 @@
 from complex_operations import r2p,p2r,ps,pm,pd,alf,a,conj,Electrical,alf2
 
 
-"1 - Impedances and apdittances (D)"
+"1 - Impedances and admittances (D)"
 
 za = 1+2j
 zb = 3-4j
@@ -15,7 +15,7 @@ zan,zbn,zcn = d2y(za,zb,zc,return_rect=True)
 print("\nCalculation of impedances in the Y equivalent:\n")
 print(f"Zan = {r2p(zan)}\nZbn = {r2p(zbn)}\nZcn = {r2p(zcn)}")
 
-"3 - Transforming impedance (Y) + line impedance in apdittance"
+"3 - Transforming impedance (Y) + line impedance in admittances"
 
 zl = 0.1+0.2j
 zal = zan+zl
@@ -26,7 +26,7 @@ yal = 1/zal
 ybl = 1/zbl
 ycl = 1/zcl
 
-print("\nCalculation of apdittance (line + Y equivalent):\n")
+print("\nCalculation of admittances (line + Y equivalent):\n")
 print(f"YA = {r2p(yal)}\nYB = {r2p(ybl)}\nYC = {r2p(ycl)}")
 
 "4 - Phase voltages Van, Vbn and Vcn"
